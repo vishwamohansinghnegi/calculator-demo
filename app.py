@@ -1,5 +1,6 @@
 from calc_func import do_addition  , do_subtraction , do_division
 from multiply import do_multiply
+from area import calculate_rectangle_area
 def main():
     print("Welcome to calculator")
     a=int(input('Enter value of a : '))
