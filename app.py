@@ -1,5 +1,6 @@
 from calc_func import do_addition  , do_subtraction
 from multiply import do_multiply
+from area import calculate_rectangle_area
 def main():
     print("Welcome to calculator")
     a=int(input('Enter value of a : '))
@@ -7,7 +8,8 @@ def main():
     print('''Select the function from the given options
         1) Addition 
         2)Subtraction
-        3)Multilpy''')
+        3)Multilpy
+        4)Area''')
     inp = input("Enter input : ")
     if inp=='1':
         result = do_addition(a,b)
@@ -15,6 +17,8 @@ def main():
         result = do_subtraction(a,b)
     elif inp=='3':
         result = do_multiply(a,b)
+    elif inp=='4':
+        result = calculate_rectangle_area(a,b)
     print('Result : ', result)
 if __name__=='__main__':
     main()
